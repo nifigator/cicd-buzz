@@ -16,6 +16,6 @@ script:
 deploy:
   provider: script
   # script: bash .travis/docker_push
-  script: .travis/deploy_dockerhub.sh
+  script: sh .travis/deploy_dockerhub.sh
   on:
     branch: master
